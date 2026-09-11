@@ -94,6 +94,25 @@
   /* about */
   .about p{max-width:68ch; font-size:16px;}
   .about p + p{margin-top:16px;}
+  .history-founded{
+    display:inline-flex;
+    align-items:baseline;
+    gap:10px;
+    margin-bottom:10px;
+    color:var(--rust);
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+  }
+  .history-founded .year{
+    font-size:34px;
+    font-weight:700;
+    line-height:1;
+  }
+  .history-founded .label{
+    font-size:13px;
+    color:var(--steel);
+  }
 
   /* timeline */
   .timeline{position:relative; padding-left:28px;}
@@ -112,6 +131,13 @@
   }
   .tl-year{font-family:'Oswald',sans-serif; color:var(--rust); font-size:15px; letter-spacing:0.04em; margin-bottom:4px;}
   .tl-item p{margin:0; max-width:62ch;}
+  .tl-source{
+    display:inline-block;
+    margin-top:7px;
+    font-size:12px;
+    color:var(--steel);
+  }
+  .tl-source:hover{color:var(--rust);}
 
   /* show highlight */
   .show-card{
@@ -462,9 +488,9 @@
   <div class="wrap">
     <div class="wordmark">The Prisoners</div>
     <nav>
+      <a href="#live">Επόμενο Live</a>
       <a href="#about">Ιστορικό</a>
       <a href="#members">Μέλη</a>
-      <a href="#live">Live</a>
       <a href="#press">Press</a>
       <a href="#links">Links</a>
     </nav>
@@ -484,7 +510,6 @@
     <div class="wrap">
       <p class="tagline">Iron Maiden Tribute Band από τη Θεσσαλονίκη, ενεργοί από το 2006. Δύο δεκαετίες live αφιερωμένες στη μουσική, τον ήχο και την ενέργεια των Iron Maiden.</p>
       <div class="facts">
-        <div class="fact"><div class="num">2006</div><div class="label">Έτος ίδρυσης</div></div>
         <div class="fact"><div class="num">20</div><div class="label">Χρόνια δράσης το 2026</div></div>
         <div class="fact"><div class="num">ΘΕΣ/ΝΙΚΗ</div><div class="label">Έδρα</div></div>
       </div>
@@ -528,23 +553,61 @@
 
 <section id="about" class="about">
   <div class="wrap">
+    <div class="history-founded"><span class="year">2006</span><span class="label">Έτος ίδρυσης</span></div>
     <h2>Ιστορικό</h2>
-    <p>Οι <strong>The Prisoners</strong> είναι ελληνικό tribute συγκρότημα αφιερωμένο εξ ολοκλήρου στη μουσική των Iron Maiden, με έδρα τη Θεσσαλονίκη. Με συνεχή πορεία από το 2006, είναι από τα πιο μακρόχρονα ενεργά Iron Maiden tribute σχήματα στη Βόρεια Ελλάδα.</p>
-    <p>Τα live τους καλύπτουν μεγάλο μέρος της δισκογραφίας των Iron Maiden, με έμφαση στην ενέργεια και την αυθεντικότητα των κλασικών εμφανίσεών τους επί σκηνής.</p>
+
+    <p>Οι <strong>The Prisoners</strong> είναι Iron Maiden tribute band από τη Θεσσαλονίκη, με πορεία που ξεκινά το 2006. Μέσα στα χρόνια έχουν εμφανιστεί επανειλημμένα σε σκηνές της πόλης, με μεγάλο μέρος της live δραστηριότητάς τους να είναι συνδεδεμένο με το Eightball και με επετειακά αφιερώματα στη δισκογραφία των Iron Maiden.</p>
 
     <div class="timeline" style="margin-top:40px;">
+
       <div class="tl-item">
         <div class="tl-year">2006</div>
-        <p>Ίδρυση των The Prisoners στη Θεσσαλονίκη.</p>
+        <p><strong>Η αρχή των The Prisoners.</strong> Το 2026 η μπάντα συμπληρώνει 20 χρόνια από την πρώτη της εμφάνιση, επιβεβαιώνοντας την έναρξη της πορείας της το 2006.</p>
+        <a class="tl-source" href="https://rockoverdose.gr/the-prisoners-epeteiako-live-sto-eightball/" target="_blank" rel="noopener">Πηγή: Rock Overdose</a>
       </div>
+
+      <div class="tl-item">
+        <div class="tl-year">3 Δεκεμβρίου 2010</div>
+        <p><strong>Harley Bar, Θεσσαλονίκη.</strong> Μία από τις παλαιότερες ανεξάρτητες αναφορές στους The Prisoners καταγράφει live τους στο Harley Bar. Ο ιδιοκτήτης της Pitch Black Records, Phivos Papadopoulos, περιέγραψε αργότερα την εμφάνιση ως ιδιαίτερα εντυπωσιακή και σημείωσε ότι η μπάντα έπαιζε Iron Maiden επί ώρες.</p>
+        <a class="tl-source" href="https://www.metalunderground.com/news/details.cfm?newsid=70156" target="_blank" rel="noopener">Πηγή: Metal Underground</a>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">25 Μαΐου 2019</div>
+        <p><strong>Eightball Live Stage.</strong> Οι The Prisoners εμφανίζονται ως special guests στο 10 Years Anniversary live των The Puppets. Η επίσημη καταχώριση του Eightball αναφέρει και τον Στέλιο Σιούλα στα τύμπανα.</p>
+        <a class="tl-source" href="https://eightballclub.gr/event/metallica-live-tribute-by-the-puppets-10-years-anniversary/" target="_blank" rel="noopener">Πηγή: Eightball Club</a>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">20 Δεκεμβρίου 2019</div>
+        <p><strong>“Iron Maiden | A Killer Tribute”.</strong> Headline tribute live στο Eightball, με τους Monolith να ανοίγουν τη βραδιά.</p>
+        <a class="tl-source" href="https://eightballclub.gr/event/iron-maiden-a-killer-tribute-by-the-prisoners/" target="_blank" rel="noopener">Πηγή: Eightball Club</a>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">3 Φεβρουαρίου 2023</div>
+        <p><strong>Επιστροφή στη σκηνή μετά την περίοδο Covid.</strong> Η ανακοίνωση του live στο Eightball το παρουσιάζει ως την επιστροφή των The Prisoners έπειτα από περίπου τρία χρόνια αποχής από τις ζωντανές εμφανίσεις.</p>
+        <a class="tl-source" href="https://cometogether.live/event/209/iron-maiden-live-tribute-by-the-prisoners" target="_blank" rel="noopener">Πηγή: ComeTogether</a>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">19 Οκτωβρίου 2024</div>
+        <p><strong>40 Years of Powerslave Anniversary.</strong> Ειδικό tribute show στο Eightball με περισσότερες από δύο ώρες Iron Maiden υλικού και special guests τους ParanoiR.</p>
+        <a class="tl-source" href="https://thessalonikicityguide.gr/events/the-prisoners-a-killer-tribute-to-iron-maiden-40-years-of-powerslave-anniversary/" target="_blank" rel="noopener">Πηγή: Thessaloniki City Guide</a>
+      </div>
+
       <div class="tl-item">
         <div class="tl-year">14 Νοεμβρίου 2025</div>
-        <p>Live στο Eightball Club, Θεσσαλονίκη — setlist με κομμάτια όπως «Aces High», «The Trooper», «Fear of the Dark» και «Hallowed Be Thy Name».</p>
+        <p><strong>50 Years of Iron Maiden Anniversary.</strong> Επετειακό live στο Eightball, με set διάρκειας άνω των δύο ωρών και επιλογές από μεγάλο μέρος της δισκογραφίας των Iron Maiden.</p>
+        <a class="tl-source" href="https://cometogether.live/event/3264/the-prisoners-a-killer-live-tribute-to-iron-maiden" target="_blank" rel="noopener">Πηγή: ComeTogether</a>
       </div>
+
       <div class="tl-item">
         <div class="tl-year">3 Οκτωβρίου 2026</div>
-        <p>Επετειακό live «20 Years Anniversary Show»: 20 χρόνια The Prisoners και 40 χρόνια από την κυκλοφορία του άλμπουμ «Somewhere in Time» των Iron Maiden.</p>
+        <p><strong>20 Years of The Prisoners / 40 Years of Somewhere in Time.</strong> Η μπάντα γιορτάζει δύο επετείους σε μία βραδιά στο Eightball Live Stage: 20 χρόνια The Prisoners και 40 χρόνια από το «Somewhere in Time».</p>
+        <a class="tl-source" href="https://rockoverdose.gr/the-prisoners-epeteiako-live-sto-eightball/" target="_blank" rel="noopener">Πηγή: Rock Overdose</a>
       </div>
+
     </div>
   </div>
 </section>
@@ -599,8 +662,6 @@
     </div>
   </div>
 </section>
-
-
 
 <section id="press">
   <div class="wrap">
