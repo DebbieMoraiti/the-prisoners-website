@@ -94,22 +94,23 @@
   /* about */
   .about p{max-width:68ch; font-size:16px;}
   .about p + p{margin-top:16px;}
-  .history-founded{
-    display:inline-flex;
-    align-items:baseline;
-    gap:10px;
-    margin-bottom:10px;
-    color:var(--rust);
+  .history-facts{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-bottom:28px;
+    padding-bottom:24px;
+    border-bottom:1px solid var(--line);
+  }
+  .history-fact .num{
     font-family:'Oswald',sans-serif;
-    text-transform:uppercase;
-    letter-spacing:.04em;
-  }
-  .history-founded .year{
-    font-size:34px;
-    font-weight:700;
+    font-size:32px;
     line-height:1;
+    color:var(--rust);
+    font-weight:600;
   }
-  .history-founded .label{
+  .history-fact .label{
+    margin-top:4px;
     font-size:13px;
     color:var(--steel);
   }
@@ -509,10 +510,6 @@
   <div class="hero-info">
     <div class="wrap">
       <p class="tagline">Iron Maiden Tribute Band από τη Θεσσαλονίκη, ενεργοί από το 2006. Δύο δεκαετίες live αφιερωμένες στη μουσική, τον ήχο και την ενέργεια των Iron Maiden.</p>
-      <div class="facts">
-        <div class="fact"><div class="num">20</div><div class="label">Χρόνια δράσης το 2026</div></div>
-        <div class="fact"><div class="num">ΘΕΣ/ΝΙΚΗ</div><div class="label">Έδρα</div></div>
-      </div>
     </div>
   </div>
 </section>
@@ -553,7 +550,20 @@
 
 <section id="about" class="about">
   <div class="wrap">
-    <div class="history-founded"><span class="year">2006</span><span class="label">Έτος ίδρυσης</span></div>
+    <div class="history-facts">
+      <div class="history-fact">
+        <div class="num">2006</div>
+        <div class="label">Έτος ίδρυσης</div>
+      </div>
+      <div class="history-fact">
+        <div class="num">20</div>
+        <div class="label">Χρόνια δράσης το 2026</div>
+      </div>
+      <div class="history-fact">
+        <div class="num">ΘΕΣ/ΝΙΚΗ</div>
+        <div class="label">Έδρα</div>
+      </div>
+    </div>
     <h2>Ιστορικό</h2>
 
     <p>Οι <strong>The Prisoners</strong> είναι Iron Maiden tribute band από τη Θεσσαλονίκη, με πορεία που ξεκινά το 2006. Μέσα στα χρόνια έχουν εμφανιστεί επανειλημμένα σε σκηνές της πόλης, με μεγάλο μέρος της live δραστηριότητάς τους να είναι συνδεδεμένο με το Eightball και με επετειακά αφιερώματα στη δισκογραφία των Iron Maiden.</p>
