@@ -381,6 +381,45 @@
   }
 
 
+
+  /* collapsible intermediate history */
+  .history-more{
+    margin:18px 0 30px;
+    border:1px solid #34363c;
+    background:var(--panel);
+  }
+  .history-more summary{
+    list-style:none;
+    cursor:pointer;
+    padding:14px 18px;
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.03em;
+    color:var(--bone);
+    transition:background .15s ease, color .15s ease;
+    user-select:none;
+  }
+  .history-more summary::-webkit-details-marker{display:none;}
+  .history-more summary::after{
+    content:'+';
+    float:right;
+    color:var(--rust);
+    font-size:20px;
+    line-height:1;
+  }
+  .history-more[open] summary::after{content:'−';}
+  .history-more summary:hover{
+    background:#292b30;
+    color:var(--rust);
+  }
+  .history-more-inner{
+    padding:22px 18px 8px 42px;
+    border-top:1px solid #34363c;
+  }
+  .history-more-inner .timeline{
+    margin:0;
+  }
+
 </style>
 
 <script type="application/ld+json">
@@ -564,6 +603,7 @@
         <div class="label">Έδρα</div>
       </div>
     </div>
+
     <h2>Ιστορικό</h2>
 
     <p>Οι <strong>The Prisoners</strong> είναι Iron Maiden tribute band από τη Θεσσαλονίκη, με πορεία που ξεκινά το 2006. Μέσα στα χρόνια έχουν εμφανιστεί επανειλημμένα σε σκηνές της πόλης, με μεγάλο μέρος της live δραστηριότητάς τους να είναι συνδεδεμένο με το Eightball και με επετειακά αφιερώματα στη δισκογραφία των Iron Maiden.</p>
@@ -576,41 +616,50 @@
         <a class="tl-source" href="https://rockoverdose.gr/the-prisoners-epeteiako-live-sto-eightball/" target="_blank" rel="noopener">Πηγή: Rock Overdose</a>
       </div>
 
-      <div class="tl-item">
-        <div class="tl-year">3 Δεκεμβρίου 2010</div>
-        <p><strong>Harley Bar, Θεσσαλονίκη.</strong> Μία από τις παλαιότερες ανεξάρτητες αναφορές στους The Prisoners καταγράφει live τους στο Harley Bar. Ο ιδιοκτήτης της Pitch Black Records, Phivos Papadopoulos, περιέγραψε αργότερα την εμφάνιση ως ιδιαίτερα εντυπωσιακή και σημείωσε ότι η μπάντα έπαιζε Iron Maiden επί ώρες.</p>
-        <a class="tl-source" href="https://www.metalunderground.com/news/details.cfm?newsid=70156" target="_blank" rel="noopener">Πηγή: Metal Underground</a>
-      </div>
+      <details class="history-more">
+        <summary>Δείτε τα ενδιάμεσα χρόνια</summary>
+        <div class="history-more-inner">
+          <div class="timeline">
 
-      <div class="tl-item">
-        <div class="tl-year">25 Μαΐου 2019</div>
-        <p><strong>Eightball Live Stage.</strong> Οι The Prisoners εμφανίζονται ως special guests στο 10 Years Anniversary live των The Puppets. Η επίσημη καταχώριση του Eightball αναφέρει και τον Στέλιο Σιούλα στα τύμπανα.</p>
-        <a class="tl-source" href="https://eightballclub.gr/event/metallica-live-tribute-by-the-puppets-10-years-anniversary/" target="_blank" rel="noopener">Πηγή: Eightball Club</a>
-      </div>
+            <div class="tl-item">
+              <div class="tl-year">3 Δεκεμβρίου 2010</div>
+              <p><strong>Harley Bar, Θεσσαλονίκη.</strong> Μία από τις παλαιότερες ανεξάρτητες αναφορές στους The Prisoners καταγράφει live τους στο Harley Bar. Ο ιδιοκτήτης της Pitch Black Records, Phivos Papadopoulos, περιέγραψε αργότερα την εμφάνιση ως ιδιαίτερα εντυπωσιακή και σημείωσε ότι η μπάντα έπαιζε Iron Maiden επί ώρες.</p>
+              <a class="tl-source" href="https://www.metalunderground.com/news/details.cfm?newsid=70156" target="_blank" rel="noopener">Πηγή: Metal Underground</a>
+            </div>
 
-      <div class="tl-item">
-        <div class="tl-year">20 Δεκεμβρίου 2019</div>
-        <p><strong>“Iron Maiden | A Killer Tribute”.</strong> Headline tribute live στο Eightball, με τους Monolith να ανοίγουν τη βραδιά.</p>
-        <a class="tl-source" href="https://eightballclub.gr/event/iron-maiden-a-killer-tribute-by-the-prisoners/" target="_blank" rel="noopener">Πηγή: Eightball Club</a>
-      </div>
+            <div class="tl-item">
+              <div class="tl-year">25 Μαΐου 2019</div>
+              <p><strong>Eightball Live Stage.</strong> Οι The Prisoners εμφανίζονται ως special guests στο 10 Years Anniversary live των The Puppets. Η επίσημη καταχώριση του Eightball αναφέρει και τον Στέλιο Σιούλα στα τύμπανα.</p>
+              <a class="tl-source" href="https://eightballclub.gr/event/metallica-live-tribute-by-the-puppets-10-years-anniversary/" target="_blank" rel="noopener">Πηγή: Eightball Club</a>
+            </div>
 
-      <div class="tl-item">
-        <div class="tl-year">3 Φεβρουαρίου 2023</div>
-        <p><strong>Επιστροφή στη σκηνή μετά την περίοδο Covid.</strong> Η ανακοίνωση του live στο Eightball το παρουσιάζει ως την επιστροφή των The Prisoners έπειτα από περίπου τρία χρόνια αποχής από τις ζωντανές εμφανίσεις.</p>
-        <a class="tl-source" href="https://cometogether.live/event/209/iron-maiden-live-tribute-by-the-prisoners" target="_blank" rel="noopener">Πηγή: ComeTogether</a>
-      </div>
+            <div class="tl-item">
+              <div class="tl-year">20 Δεκεμβρίου 2019</div>
+              <p><strong>“Iron Maiden | A Killer Tribute”.</strong> Headline tribute live στο Eightball, με τους Monolith να ανοίγουν τη βραδιά.</p>
+              <a class="tl-source" href="https://eightballclub.gr/event/iron-maiden-a-killer-tribute-by-the-prisoners/" target="_blank" rel="noopener">Πηγή: Eightball Club</a>
+            </div>
 
-      <div class="tl-item">
-        <div class="tl-year">19 Οκτωβρίου 2024</div>
-        <p><strong>40 Years of Powerslave Anniversary.</strong> Ειδικό tribute show στο Eightball με περισσότερες από δύο ώρες Iron Maiden υλικού και special guests τους ParanoiR.</p>
-        <a class="tl-source" href="https://thessalonikicityguide.gr/events/the-prisoners-a-killer-tribute-to-iron-maiden-40-years-of-powerslave-anniversary/" target="_blank" rel="noopener">Πηγή: Thessaloniki City Guide</a>
-      </div>
+            <div class="tl-item">
+              <div class="tl-year">3 Φεβρουαρίου 2023</div>
+              <p><strong>Επιστροφή στη σκηνή μετά την περίοδο Covid.</strong> Η ανακοίνωση του live στο Eightball το παρουσιάζει ως την επιστροφή των The Prisoners έπειτα από περίπου τρία χρόνια αποχής από τις ζωντανές εμφανίσεις.</p>
+              <a class="tl-source" href="https://cometogether.live/event/209/iron-maiden-live-tribute-by-the-prisoners" target="_blank" rel="noopener">Πηγή: ComeTogether</a>
+            </div>
 
-      <div class="tl-item">
-        <div class="tl-year">14 Νοεμβρίου 2025</div>
-        <p><strong>50 Years of Iron Maiden Anniversary.</strong> Επετειακό live στο Eightball, με set διάρκειας άνω των δύο ωρών και επιλογές από μεγάλο μέρος της δισκογραφίας των Iron Maiden.</p>
-        <a class="tl-source" href="https://cometogether.live/event/3264/the-prisoners-a-killer-live-tribute-to-iron-maiden" target="_blank" rel="noopener">Πηγή: ComeTogether</a>
-      </div>
+            <div class="tl-item">
+              <div class="tl-year">19 Οκτωβρίου 2024</div>
+              <p><strong>40 Years of Powerslave Anniversary.</strong> Ειδικό tribute show στο Eightball με περισσότερες από δύο ώρες Iron Maiden υλικού και special guests τους ParanoiR.</p>
+              <a class="tl-source" href="https://thessalonikicityguide.gr/events/the-prisoners-a-killer-tribute-to-iron-maiden-40-years-of-powerslave-anniversary/" target="_blank" rel="noopener">Πηγή: Thessaloniki City Guide</a>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-year">14 Νοεμβρίου 2025</div>
+              <p><strong>50 Years of Iron Maiden Anniversary.</strong> Επετειακό live στο Eightball, με set διάρκειας άνω των δύο ωρών και επιλογές από μεγάλο μέρος της δισκογραφίας των Iron Maiden.</p>
+              <a class="tl-source" href="https://cometogether.live/event/3264/the-prisoners-a-killer-live-tribute-to-iron-maiden" target="_blank" rel="noopener">Πηγή: ComeTogether</a>
+            </div>
+
+          </div>
+        </div>
+      </details>
 
       <div class="tl-item">
         <div class="tl-year">3 Οκτωβρίου 2026</div>
