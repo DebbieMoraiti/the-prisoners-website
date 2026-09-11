@@ -162,6 +162,48 @@
   .linkcard .name{font-family:'Oswald',sans-serif; color:var(--bone); font-size:16px; text-transform:uppercase;}
   .linkcard .sub{color:var(--steel); font-size:13px; margin-top:3px;}
 
+
+  /* members */
+  .members-grid{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:14px;
+  }
+  .member-card{
+    background:var(--panel);
+    border:1px solid #34363c;
+    border-left:4px solid var(--rust);
+    padding:20px 22px;
+  }
+  .member-card .member-name{
+    font-family:'Oswald',sans-serif;
+    font-size:20px;
+    color:var(--bone);
+    text-transform:uppercase;
+    letter-spacing:.02em;
+  }
+  .member-card .member-name-gr{
+    margin-top:2px;
+    color:var(--bone-dim);
+    font-size:15px;
+  }
+  .member-card .member-role{
+    margin-top:7px;
+    color:var(--steel);
+    font-size:14px;
+  }
+  .member-card .member-link{
+    display:inline-block;
+    margin-top:12px;
+    font-size:13px;
+    color:var(--rust);
+  }
+  .member-card .member-link:hover{color:#d4693e;}
+
+  @media(max-width:680px){
+    .members-grid{grid-template-columns:1fr;}
+  }
+
   footer{padding:40px 0 60px; color:var(--steel); font-size:13px;}
   footer .wrap{border-top:1px solid var(--line); padding-top:24px;}
 
@@ -333,6 +375,50 @@
     "https://musicbrainz.org/artist/ce0f3932-bee0-420f-9ee0-be5cbfe3a016",
     "https://www.wikidata.org/wiki/Q141397106",
     "https://www.setlist.fm/setlists/the-prisoners-3852d6f.html"
+  ],
+
+  "member": [
+    {
+      "@type": "Person",
+      "name": "Stelios Sioulas",
+      "alternateName": "Στέλιος Σιούλας",
+      "sameAs": "https://www.facebook.com/stelios.sioulas.7",
+      "description": "Drums"
+    },
+    {
+      "@type": "Person",
+      "name": "Cons Marg",
+      "alternateName": "Κώστας Μαργαρίτης",
+      "sameAs": "https://www.facebook.com/cons.marg",
+      "description": "Vocals"
+    },
+    {
+      "@type": "Person",
+      "name": "Lily Papa",
+      "alternateName": "Λίλυ Παπά",
+      "sameAs": "https://www.facebook.com/profile.php?id=100011329137923",
+      "description": "Vocals"
+    },
+    {
+      "@type": "Person",
+      "name": "Teo Savage",
+      "alternateName": "Θεολόγος Σισίνογλου",
+      "sameAs": "https://www.facebook.com/sisinoglou.theologos",
+      "description": "Guitar"
+    },
+    {
+      "@type": "Person",
+      "name": "Fotis Sheriff Toumanides",
+      "alternateName": "Φώτης Τουμανίδης",
+      "sameAs": "https://www.facebook.com/fotis.toumanides",
+      "description": "Bass"
+    },
+    {
+      "@type": "Person",
+      "name": "Jim Tsakyridis",
+      "alternateName": "Δημήτρης Τσακυρίδης",
+      "description": "Guitar"
+    }
   ]
 }
 </script>
@@ -377,6 +463,7 @@
     <div class="wordmark">The Prisoners</div>
     <nav>
       <a href="#about">Ιστορικό</a>
+      <a href="#members">Μέλη</a>
       <a href="#live">Live</a>
       <a href="#press">Press</a>
       <a href="#links">Links</a>
@@ -424,6 +511,57 @@
         <div class="tl-year">3 Οκτωβρίου 2026</div>
         <p>Επετειακό live «20 Years Anniversary Show»: 20 χρόνια The Prisoners και 40 χρόνια από την κυκλοφορία του άλμπουμ «Somewhere in Time» των Iron Maiden.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="members">
+  <div class="wrap">
+    <h2>Μέλη</h2>
+    <div class="members-grid">
+
+      <div class="member-card">
+        <div class="member-name">Stelios Sioulas</div>
+        <div class="member-name-gr">Στέλιος Σιούλας</div>
+        <div class="member-role">Drums / Τύμπανα</div>
+        <a class="member-link" href="https://www.facebook.com/stelios.sioulas.7" target="_blank" rel="noopener">Facebook profile</a>
+      </div>
+
+      <div class="member-card">
+        <div class="member-name">Cons Marg</div>
+        <div class="member-name-gr">Κώστας Μαργαρίτης</div>
+        <div class="member-role">Vocals / Φωνητικά</div>
+        <a class="member-link" href="https://www.facebook.com/cons.marg" target="_blank" rel="noopener">Facebook profile</a>
+      </div>
+
+      <div class="member-card">
+        <div class="member-name">Lily Papa</div>
+        <div class="member-name-gr">Λίλυ Παπά</div>
+        <div class="member-role">Vocals / Φωνητικά</div>
+        <a class="member-link" href="https://www.facebook.com/profile.php?id=100011329137923" target="_blank" rel="noopener">Facebook profile</a>
+      </div>
+
+      <div class="member-card">
+        <div class="member-name">Teo Savage</div>
+        <div class="member-name-gr">Θεολόγος Σισίνογλου</div>
+        <div class="member-role">Guitar / Κιθάρα</div>
+        <a class="member-link" href="https://www.facebook.com/sisinoglou.theologos" target="_blank" rel="noopener">Facebook profile</a>
+      </div>
+
+      <div class="member-card">
+        <div class="member-name">Fotis Sheriff Toumanides</div>
+        <div class="member-name-gr">Φώτης Τουμανίδης</div>
+        <div class="member-role">Bass / Μπάσο</div>
+        <a class="member-link" href="https://www.facebook.com/fotis.toumanides" target="_blank" rel="noopener">Facebook profile</a>
+      </div>
+
+      <div class="member-card">
+        <div class="member-name">Jim Tsakyridis</div>
+        <div class="member-name-gr">Δημήτρης Τσακυρίδης</div>
+        <div class="member-role">Guitar / Κιθάρα</div>
+        <a class="member-link" href="https://www.facebook.com/jim.tsak" target="_blank" rel="noopener">Facebook profile</a>
+      </div>
+
     </div>
   </div>
 </section>
